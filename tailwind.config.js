@@ -8,8 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: {
+          "blue-900": "#0B0D17",
+          "blue-300": "#D0D6F9",
+        },
+      },
+      backgroundImage: {
+        homepage: "url('/images/homepage-background.png')",
+        homepageMobile: "url('/images/homepage-background-mobile.png')",
+      },
+      fontFamily: {
+        barlow: ["Barlow", "sans-serif"],
+        "barlow-condensed": ["Barlow Condensed", "sans-serif"],
+        bellefair: ["Bellefair", "sans-serif"],
       },
     },
   },
