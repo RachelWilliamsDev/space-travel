@@ -16,6 +16,7 @@ module.exports = {
       backgroundImage: {
         homepage: "url('/images/homepage-background.png')",
         homepageMobile: "url('/images/homepage-background-mobile.png')",
+        destination: "url('/images/destination-background.png')",
       },
       fontFamily: {
         barlow: ["Barlow", "sans-serif"],
