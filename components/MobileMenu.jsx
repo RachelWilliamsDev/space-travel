@@ -5,9 +5,6 @@ import { usePathname } from "next/navigation";
 const MobileMenu = ({ links, setIsOpen, ref }) => {
   const pathname = usePathname();
 
-  console.log(links);
-  console.log(pathname);
-
   return (
     <div
       ref={ref}
