@@ -24,9 +24,8 @@ export default function Home() {
             </div>
             <div className="flex flex-1 justify-center xl:justify-end items-end md:items-start">
               <div className="flex w-36 h-36 md:w-[272px] md:h-[272px] rounded-full bg-white items-center justify-center hover:outline hover:outline-[50px] xl:hover:outline-[80px] hover:outline-[rgba(255,255,255,0.2)] hover:cursor-pointer">
-                {/* TODO: Link to destination page */}
                 <Link
-                  href="/"
+                  href="/destination"
                   className="text-primary-blue-900 font-bellefair font-normal tracking-normal leading-8 text-lg md:text-[32px] uppercase"
                 >
                   Explore
