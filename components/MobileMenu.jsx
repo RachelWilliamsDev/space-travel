@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const MobileMenu = ({ links, setIsOpen, ref }) => {
+  const pathname = usePathname();
+
+  console.log(links);
+  console.log(pathname);
+
   return (
     <div
       ref={ref}
@@ -20,10 +26,13 @@ const MobileMenu = ({ links, setIsOpen, ref }) => {
             <Link
               key={i}
               href={link.href}
-              className="font-light text-sm font-barlow-condensed tracking-[2px] flex leading-4 relative h-auto mt-8"
+              className={`font-light text-sm font-barlow-condensed tracking-[2px] flex leading-4 relative h-auto mt-8 hover:border-r-[3px] hover:border-solid hover:border-white/20 ${
+                pathname === link.href
+                  ? "border-r-[3px] border-solid border-white"
+                  : ""
+              }`}
             >
               <span className="font-bold mr-3">0{i}</span>
-
               {link.name}
             </Link>
           ))}
@@ -32,4 +41,5 @@ const MobileMenu = ({ links, setIsOpen, ref }) => {
     </div>
   );
 };
+
 export default MobileMenu;
