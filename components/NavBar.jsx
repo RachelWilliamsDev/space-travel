@@ -10,7 +10,7 @@ const NavBar = () => {
     { name: "HOME", href: "/" },
     { name: "DESTINATION", href: "/destination" },
     { name: "CREW", href: "/crew" },
-    { name: "TECHNOLOGY", href: "/" },
+    { name: "TECHNOLOGY", href: "/technology" },
   ];
 
   const pathname = usePathname();
@@ -34,17 +34,17 @@ const NavBar = () => {
 
   return (
     <div className="flex h-[96px] w-full items-center md:mt-10 px-8 md:px-0 justify-between md:justify-normal">
-      <div className="w-full h-full md:ml-[55px] flex items-center z-20 max-w-[40px] xl:max-w-none mr-[55px] xl:mr-0">
+      <div className="flex-grow h-full md:ml-[55px] flex items-center z-20  xl:max-w-none mr-[55px] xl:mr-0">
         <Image
           src="/images/logo-small.png"
           alt="logo"
           width={40}
           height={40}
-          className="z-20 flex-shrink-0"
+          className="z-20 flex-shrink-0 max-w-[40px]"
         />
-        <div className="hidden xl:flex h-[0.6px] bg-[rgba(255,255,255,0.2)] w-full ml-4 mr-56" />
+        <div className="hidden xl:flex h-[0.6px] bg-[rgba(255,255,255,0.2)] w-full ml-4 -mr-10" />
       </div>
-      <div className="w-full h-full hidden md:flex justify-around items-center bg-[rgba(255,255,255,0.04)] backdrop-blur-[35px] z-10 xl:-ml-64">
+      <div className="flex-grow h-full hidden md:flex justify-around items-center bg-[rgba(255,255,255,0.04)] backdrop-blur-[35px] z-10">
         {links.map((link, i) => (
           <Link
             key={i}
