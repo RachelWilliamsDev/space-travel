@@ -31,7 +31,7 @@ export default function Technology() {
 
   return (
     <div className="relative flex w-screen">
-      <div className="absolute bg-destination w-full h-screen overflow-x-hidden bg-cover bg-center bg-no-repeat">
+      <div className="absolute w-full h-screen overflow-x-hidden bg-center bg-no-repeat bg-cover bg-technology">
         <NavBar />
         <Container
           title="Space launch 101"
@@ -39,7 +39,7 @@ export default function Technology() {
           outerHorizontalPadding="px-0 xl:pl-[165px] xl:pr-0"
           innerHorizontalPadding="px-0"
         >
-          <div className="flex flex-col xl:flex-row w-full h-full gap-y-14 mx-auto xl:mx-0 items-center gap-x-8">
+          <div className="flex flex-col items-center w-full h-full mx-auto xl:flex-row gap-y-14 xl:mx-0 gap-x-8">
             <div className="xl:order-1 order-2 flex flex-1 flex-col xl:flex-row gap-x-16 px-8 md:px-[88px] xl:px-0">
               <TechSelector
                 tech={spaceTech}
@@ -48,7 +48,7 @@ export default function Technology() {
               />
               <TechDetails selectedTech={selectedTech} />
             </div>
-            <div className="order-1 xl:order-2 flex flex-1 justify-end">
+            <div className="flex justify-end flex-1 order-1 xl:order-2">
               <Image
                 src={selectedTech.image}
                 alt={selectedTech.name}

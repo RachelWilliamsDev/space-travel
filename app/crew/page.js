@@ -41,12 +41,12 @@ export default function Crew() {
 
   return (
     <div className="relative flex w-screen">
-      <div className="absolute bg-destination w-full h-screen overflow-x-hidden bg-cover bg-center bg-no-repeat">
+      <div className="absolute w-full h-screen overflow-x-hidden bg-center bg-no-repeat bg-cover bg-crew">
         <NavBar />
         <Container title="Meet your crew" pageNumber="2">
-          <div className="flex flex-col xl:flex-row w-full h-full gap-y-14 mx-auto xl:mx-0">
-            <div className="flex flex-col xl:flex-1 p-4">
-              <div className="flex flex-col items-center xl:justify-between h-full gap-y-6">
+          <div className="flex flex-col w-full h-full mx-auto xl:flex-row gap-y-14 xl:mx-0">
+            <div className="flex flex-col p-4 xl:flex-1">
+              <div className="flex flex-col items-center h-full xl:justify-between gap-y-6">
                 <CrewDetails selectedCrew={selectedCrew} />
                 <CrewSelector
                   crew={spaceCrew}
